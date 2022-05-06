@@ -1,6 +1,6 @@
 # RestaurantManagement
 ## Execute
-
+ 
 Double click RMS_GUI.jar
 ## Login
 You can use test data for the first time. You can add new staff when you log in as manager.
