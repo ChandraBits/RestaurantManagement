@@ -1,6 +1,80 @@
+
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body> <h2> Welcome to Restaurant Management </h2>
-  </body>
+	<title> Restaurant Management</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/assignBits.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+
+<div class="image-container">
+  <div class="text"><h1>Welcome to Restaurant Management</h1></div>
+  
+  </div>
+</div>
+</div>
+<div class="bgimg-1">	
+  <div class="caption">
+  <span class="border">About</span>
+  <h3 style="text-align:justify; padding:15px">
+  The Restaurant Management System helps the restaurant manager to manage the restaurant more effectively and 
+	efficiently by computerizing meal ordering and billing. 
+
+	</br>The system processes transaction and stores the resulting data. Reports will be generated from these data which 
+	help the manager to make appropriate business decisions for the restaurant. 
+	For example, knowing the number of customers for a particular time interval, the manager can decide whether 
+	more waiters and chefs are required.
+	</div>
+</div>
+
+<!--div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">About</h3>
+  <p>This is all about ME</p>
+</div-->
+
+<!-- Page content -->
+
+<div class="content">
+<div w3-include-html="picture.html">
+</div>
+
+<script>
+	includeHTML();
+</script>
+
+</div>
+</div>
+
+</body>
 </html>
