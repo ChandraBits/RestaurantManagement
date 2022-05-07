@@ -70,4 +70,12 @@ You can see all menu items by clicking "ALL" button, you can see particular item
 * When you log in, the system automatic set start working time.
 * Clock out button will set finish working time of the person currently logged in.
 * Manager can make staff clocked out via manage employees, by selecting staff and clicking Clock out button.
-* You can see a payment details for a day by clicking "Show payment" button  
+* You can see a payment details for a day by clicking "Show payment" button
+
+##Restaurant management system application for complete End to End management.
+
+##Tech Stacks Used
+1. Java
+2. Microservices
+3. Docker
+4. Kubernetes  
