@@ -177,6 +177,19 @@ background-color: transparent;
   width: 50%;
 }
 
+.contentMenu {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  height: 0;
+  position: absolute;
+  top: 1222px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+}
+
 /* The circles on the timeline */
 .container::after {
   content: '';
